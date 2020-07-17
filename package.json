@@ -4,6 +4,7 @@
   "license": "MIT",
   "version": "1.0.0",
   "scripts": {
+    "start-all": "concurrently \"npm:dev\" \"npm:storybook\" -c \"bold.black.bgGreen,black.bgMagenta.bold\"",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -61,6 +62,7 @@
     "lint-staged": "^10.0.10",
     "prettier": "^2.0.2",
     "typescript": "^3.8.3",
-    "typescript-plugin-styled-components": "^1.4.4"
+    "typescript-plugin-styled-components": "^1.4.4",
+    "concurrently": "^5.2.0"
   }
 }
